@@ -1,0 +1,38 @@
+.title {
+  font-family: $font-family-georgia;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+  cursor: default;
+}
+
+.subtitle {
+  font-family: $font-family-arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: $color-dark-xl;
+  cursor: default;
+
+  &-white {
+    color: $color-dark-s;
+    width: 460px;
+  }
+}
+
+.link {
+  font-family: $font-family-georgia;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.04em;
+  color: $color-primary;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    color: $color-light-xl;
+  }
+}
