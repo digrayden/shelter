@@ -1,0 +1,76 @@
+.footer {
+  background-size: cover;
+  background: radial-gradient(549.89% 73.65% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%),
+    url("../images/footer-background.svg");
+
+  &__content {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+
+  &__titel {
+    color: $color-light-xl;
+    width: 285px;
+  }
+
+  &__contact {
+    width: 290px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+    margin: 20px 0px 0px 0px;
+  }
+
+  &__adress {
+    width: 302px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
+
+  &__adress-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.email-phone {
+  width: 251px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: $gap-small;
+}
+
+.email__svg {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 32px;
+}
+
+.adress {
+  width: 302px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 34px 0 32px 0;
+
+  &:last-child {
+    margin: 0px;
+  }
+}
+
+.footer-puppy {
+  width: 300px;
+  height: 310px;
+}
