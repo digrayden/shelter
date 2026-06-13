@@ -1,0 +1,25 @@
+.pets__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pets__button {
+  border: none;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  @include button-hover;
+
+  &-text {
+    font-family: $font-family-georgia;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    text-decoration: none;
+  }
+}
