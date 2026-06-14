@@ -1,0 +1,39 @@
+.help {
+  background-color: $color-light-xl;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $section-padding;
+    gap: $gap-xl;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 120px;
+  }
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap-medium;
+
+  &__text {
+    font-family: $font-family-georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-dark-l;
+  }
+}

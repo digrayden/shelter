@@ -1,0 +1,50 @@
+.button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 261px;
+  height: 52px;
+  background-color: $color-primary;
+  font-family: $font-family-arial;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  @include button-hover;
+}
+
+.button-arrow {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+  margin-right: 53px;
+  @include flex-center;
+  transition: 0.2s;
+
+  &:hover {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+
+  &:last-child {
+    margin-left: 53px;
+    margin-right: 0px;
+  }
+}
+
+.content__button {
+  width: 207px;
+
+  &-text {
+    font-family: $font-family-arial;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    text-decoration: none;
+  }
+}

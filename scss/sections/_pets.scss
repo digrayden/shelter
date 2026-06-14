@@ -1,0 +1,16 @@
+.pets {
+  background: $color-light-l;
+
+  &__content {
+    flex-direction: column;
+    align-items: center;
+    margin: $section-padding;
+    gap: $gap-xl;
+  }
+
+  &__title {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

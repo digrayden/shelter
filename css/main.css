@@ -1,0 +1,606 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  cursor: default;
+}
+
+.subtitle {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4c4c4c;
+  cursor: default;
+}
+.subtitle-white {
+  color: #cdcdcd;
+  width: 460px;
+}
+
+.link {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.04em;
+  color: #f1cdb3;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.link:hover {
+  color: #fff;
+}
+
+.header {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px 0px 0px;
+}
+.header .logo {
+  width: auto;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.header .logo__title {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+.header .logo__subtitle {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  gap: 35px;
+}
+.nav__item {
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #cdcdcd;
+  transition: 0.2s;
+}
+.nav__item:hover {
+  color: #fafafa;
+}
+.nav__item-active {
+  -webkit-text-decoration: underline solid #f1cdb3 3px;
+          text-decoration: underline solid #f1cdb3 3px;
+  color: #fafafa;
+  cursor: default;
+}
+
+.footer {
+  background-size: cover;
+  background: radial-gradient(549.89% 73.65% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), url("../images/footer-background.svg");
+}
+.footer__content {
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.footer__titel {
+  color: #fff;
+  width: 285px;
+}
+.footer__contact {
+  width: 290px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 20px 0px 0px 0px;
+}
+.footer__adress {
+  width: 302px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__adress-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-phone {
+  width: 251px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.email__svg {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 32px;
+}
+
+.adress {
+  width: 302px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 34px 0 32px 0;
+}
+.adress:last-child {
+  margin: 0px;
+}
+
+.footer-puppy {
+  width: 300px;
+  height: 310px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+.startscreen {
+  gap: 90px;
+  background-size: cover;
+  background-image: radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%), url(../images/start-screen-gradient-background.svg);
+}
+.startscreen .startscreen__content-collumn {
+  margin-top: 163px;
+  gap: 42px;
+}
+.startscreen .title-white {
+  font-size: 44px;
+  color: #fff;
+  letter-spacing: 0em;
+  width: 310px;
+}
+.startscreen .startscreen__content-img {
+  width: 698px;
+  height: 728px;
+  margin-left: 50px;
+}
+
+.about {
+  background-color: #fff;
+}
+.about__content {
+  gap: 120px;
+  margin: 80px 0 100px 0;
+}
+.about__collumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 430px;
+}
+.about__collumn-title {
+  width: 370px;
+  height: 90px;
+}
+.about-collumn__subtitle {
+  margin: 25px 0px;
+}
+.about-collumn__subtitle:last-child {
+  margin: 0px;
+}
+.about__img {
+  background-image: url(../images/about-pets.svg);
+  width: 300px;
+  height: 408px;
+}
+
+.pets {
+  background: #f6f6f6;
+}
+.pets__content {
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 100px 0;
+  gap: 60px;
+}
+.pets__title {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.help {
+  background-color: #fff;
+}
+.help__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 100px 0;
+  gap: 60px;
+}
+.help__title {
+  text-align: center;
+}
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 120px;
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.list-icon__text {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.donation {
+  background: #f6f6f6;
+}
+.donation__content {
+  max-width: 915px;
+  margin: 80px 0 100px 0;
+  gap: 30px;
+  align-items: center;
+}
+.donation__img {
+  display: flex;
+  align-content: center;
+  width: 505px;
+  height: 261px;
+}
+.donation__column {
+  width: 380px;
+  height: 282px;
+  gap: 20px;
+}
+.donation__title {
+  width: 300px;
+}
+.donation__subheading {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation__card {
+  display: flex;
+  gap: 13px;
+  border-radius: 9px;
+  padding: 10px 15px;
+  width: 349px;
+  height: 43px;
+  background: #f1cdb3;
+}
+.donation__subtitle {
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #b2b2b2;
+}
+
+.card-svg {
+  fill: #292929;
+}
+
+.card-text {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  transition: 1s;
+}
+.card-text:hover {
+  color: #fff;
+}
+
+.button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 261px;
+  height: 52px;
+  background-color: #f1cdb3;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: 0.2s;
+}
+.button:hover {
+  background: #fddcc4;
+  border-color: #fddcc4;
+  cursor: pointer;
+}
+
+.button-arrow {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  margin-right: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.button-arrow:hover {
+  background: #fddcc4;
+  border-color: #fddcc4;
+}
+.button-arrow:last-child {
+  margin-left: 53px;
+  margin-right: 0px;
+}
+
+.content__button {
+  width: 207px;
+}
+.content__button-text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  text-decoration: none;
+}
+
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 435px;
+  background-color: #fafafa;
+  border-radius: 9px;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+.pet-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.pet-card__center {
+  margin: 0px 90px;
+}
+.pet-card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.pet-card__img {
+  border-radius: 9px 9px 0 0;
+  width: 100%;
+  height: 270px;
+}
+.pet-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pets-card__button {
+  font-family: "Georgia", sans-serif;
+  background-color: transparent;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 187px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  transition: 0.2s;
+}
+.pets-card__button:hover {
+  background: #fddcc4;
+  border-color: #fddcc4;
+  cursor: pointer;
+}
+
+.pets-card__name {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.pets__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pets__button {
+  border: none;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.pets__button:hover {
+  background: #fddcc4;
+  border-color: #fddcc4;
+  cursor: pointer;
+}
+.pets__button-text {
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  text-decoration: none;
+}
+
+.section-header {
+  height: 120px;
+  justify-content: center;
+}
+
+.header-content {
+  width: 1200px;
+  height: 60px;
+  margin: 0px;
+}
+
+.logo__title-dark {
+  color: #545454;
+}
+.logo__subtitle-dark {
+  color: #292929;
+}
+.logo__title-link {
+  text-decoration: none;
+}
+
+.nav__item-dark {
+  color: #545454;
+  transition: 1s;
+}
+.nav__item-dark:hover {
+  color: #f1cdb3;
+}
+.nav__item-active-dark {
+  color: #292929;
+  transition: 1s;
+}
+.nav__item-active-dark:hover {
+  color: #292929;
+}
+
+.pets__content-our {
+  gap: 60px;
+}
+.pets__slider-our {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 0px;
+}
+
+.pet-card__center {
+  margin: 0px;
+}
+
+.pets__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-arrow {
+  margin: 0px;
+}
+.button-arrow:last-child {
+  margin: 0px;
+}
+.button-arrow-unactive {
+  border: 2px solid #cdcdcd;
+  margin: 0px;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.button-arrow-unactive:hover {
+  background-color: transparent;
+}
+.button-arrow-number {
+  background: #f1cdb3;
+  margin: 0px;
+}
+.button-arrow-number:hover {
+  background-color: #f1cdb3;
+}
+.button-arrow-active:hover {
+  background-color: #f1cdb3;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}/*# sourceMappingURL=main.css.map */
