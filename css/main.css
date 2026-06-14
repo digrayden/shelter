@@ -119,6 +119,18 @@ html {
   cursor: default;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
 .footer {
   background-size: cover;
   background: radial-gradient(549.89% 73.65% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), url("../images/footer-background.svg");
@@ -186,18 +198,6 @@ html {
 .footer-puppy {
   width: 300px;
   height: 310px;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
-}
-
-.content-column {
-  display: flex;
-  flex-direction: column;
-  max-width: 460px;
 }
 
 .startscreen {
@@ -493,6 +493,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 30px 0px;
 }
 
 .pets__button {
@@ -563,39 +564,49 @@ html {
   gap: 30px 0px;
 }
 
-.pet-card__center {
-  margin: 0px;
-}
-
 .pets__navigation {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.button-arrow {
+.button-arrow-our {
+  margin: 0px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.button-arrow-our:hover {
+  background: #fddcc4;
+  border-color: #fddcc4;
+}
+.button-arrow-our:last-child {
   margin: 0px;
 }
-.button-arrow:last-child {
-  margin: 0px;
-}
-.button-arrow-unactive {
+.button-arrow-our-unactive {
   border: 2px solid #cdcdcd;
   margin: 0px;
   cursor: not-allowed;
   opacity: 0.5;
 }
-.button-arrow-unactive:hover {
+.button-arrow-our-unactive:hover {
   background-color: transparent;
 }
-.button-arrow-number {
+.button-arrow-our-number {
   background: #f1cdb3;
   margin: 0px;
 }
-.button-arrow-number:hover {
+.button-arrow-our-number:hover {
   background-color: #f1cdb3;
 }
-.button-arrow-active:hover {
+.button-arrow-our-active:hover {
   background-color: #f1cdb3;
   cursor: pointer;
 }
