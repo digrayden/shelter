@@ -1,0 +1,116 @@
+.section-header {
+  height: 120px;
+  justify-content: center;
+}
+
+.header-content {
+  width: $container-width;
+  height: 60px;
+  margin: 0px;
+}
+
+.logo {
+  &__title-dark {
+    color: $color-dark-l;
+  }
+
+  &__subtitle-dark {
+    color: $color-dark-3xl;
+  }
+
+  &__title-link {
+    text-decoration: none;
+  }
+}
+
+.nav {
+  &__item-dark {
+    color: $color-dark-l;
+    transition: 1s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__item-active-dark {
+    color: $color-dark-3xl;
+    transition: 1s;
+
+    &:hover {
+      color: $color-dark-3xl;
+    }
+  }
+}
+
+.pets {
+  &__content-our {
+    gap: $gap-xl;
+  }
+
+  &__slider-our {
+    flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px 0px;
+  }
+}
+
+
+
+.pets__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-arrow-our {
+  margin: 0px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+    
+  @include flex-center;
+  transition: 0.2s;
+  
+  &:hover {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+
+  &:last-child {
+    margin: 0px;
+  }
+
+  &-unactive {
+    border: 2px solid $color-dark-s;
+    margin: 0px;
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &-number {
+    background: $color-primary;
+    margin: 0px;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &-active:hover {
+    background-color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
