@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  justify-content: center;
+  width: $container-width;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}

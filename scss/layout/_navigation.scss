@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    gap: 35px;
+  }
+
+  &__item {
+    font-family: $font-family-arial;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $color-dark-s;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-light-s;
+    }
+
+    &-active {
+      text-decoration: underline solid $color-primary 3px;
+      color: $color-light-s;
+      cursor: default;
+    }
+  }
+}
